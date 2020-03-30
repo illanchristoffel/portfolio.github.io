@@ -69,7 +69,6 @@ html {
 }
 
 
-
 /*/COMMUN*/
 
 
@@ -151,6 +150,7 @@ nav ul li:hover {
     left: -10000px;
     z-index: 1;
 }
+
 .aboutMe h3 {
     font-size: 18px;
 }
@@ -582,13 +582,40 @@ input[type=submit]:hover {
 }
 
 
-/*desk*/
 
-@media (max-width: 500px) {
+@media (min-width: 500px) and (max-width: 1023px) {
+
+    .portfolio-wrap {
+        width: 700px;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .container {
+        position: absolute !important;
+        top: 42% !important;
+        left: 52% !important;
+    }
+
+    .container h1 {
+        font-size: 37px;
+    }
+
+    .container .desc-intro {
+        font-size: 28px;
+    }
 
     nav ul li {
         font-size: 29px;
         padding: 43px 21px 5px;
+    }
+
+    .aboutMe {
+        height: 100%;
+    }
+
+    .lng-progr{
+        height: 100%;
     }
 
     .aboutMe h2, .parcours-h2 {
@@ -596,7 +623,7 @@ input[type=submit]:hover {
     }
 
     .bloc-fond-circle {
-        margin: 50px 161px !important;
+        margin: 50px 270px !important;
         width: 0;
     }
 
@@ -609,8 +636,8 @@ input[type=submit]:hover {
     }
 
     .bloc {
-        margin: 35px 116px 0 !important;
-        width: 30rem !important;;
+        margin: 35px 63px 0 !important;
+        width: 62rem !important;
     }
 
     .circle {
@@ -625,82 +652,56 @@ input[type=submit]:hover {
     }
 
     .menu-horizontal-style {
-        margin: 0 12rem;
-        white-space: nowrap;
-        overflow-x: scroll;
+        width: 100%;
     }
 
     .menu-horizontal-style > ul {
-        width: 161%;
+        width: 100%;
     }
 
     .menu-horizontal-style > ul > li {
         font-size: 14px;
     }
 
-    .background-projet{
+    .background-projet {
         position: absolute;
-        left: 6rem;
+        left: 12rem;
+        width: 84%;
+    }
+
+    .container-progr {
+        margin-left: 74px;
     }
 
     .cpt .container-progr img {
         margin: 2rem 13rem;
     }
 
+    .html {
+        height: 100%;
+    }
+
+    .java {
+        height: 100%;
+    }
+
     #img-php {
         position: initial !important;
     }
 
-    .container {
-        position: absolute !important;
-        top: 42% !important;
-        left: 59% !important;
-    }
-
-    .container h1 {
-        font-size: 37px;
-    }
-
-    .container .desc-intro {
-        font-size: 28px;
-    }
+    
 
     .contact-form {
-        width: 37rem;
-        margin: 10% 10rem
+        width: 67%;
     }
 
     input[type=text] {
         width: 100%;
     }
 
-    input[type=email]{
+    input[type=email] {
         width: 100%;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 1023px) {
-    .bloc {
-        margin: 23px 30px 0;
-    }
-
-    .bloc-fond-circle {
-        margin: 50px 30px;
-    }
-
-    .background-projet {
-        position: absolute;
-        top: 34% !important;
-    }
-
-    .cpt .container-progr img {
-        width: 200px;
-        height: 200px;
-    }
-
-    #img-php {
-        position: absolute;
-        top: 41rem;
+        margin-left: 0;
     }
 
 }
@@ -720,6 +721,7 @@ input[type=submit]:hover {
 
     .aboutMe {
         width: 100%;
+        height: 100%;
     }
 
     .aboutMe h2 {
@@ -764,10 +766,18 @@ input[type=submit]:hover {
         height: 100%;
     }
 
+    .html {
+        height: 100%;
+    }
+
+    .java {
+        height: 100%;
+    }
+
     #img-html {
         position: absolute;
         top: 0;
-        left: 42%;
+        left: 38%;
     }
 
 
@@ -916,41 +926,7 @@ input[type=submit]:hover {
         height: 200px;
     }
 
-    .cpt {
-        position: relative;
-    }
 
-    .lng-progr {
-        height: 100%;
-    }
-
-    #img-html {
-        position: absolute;
-        left: 36rem;
-    }
-
-    #img-java {
-        position: absolute;
-        left: 62rem;
-    }
-
-    #img-php {
-        position: absolute;
-        left: 49rem;
-        top: 18rem;;
-    }
-
-    #img-sql {
-        position: absolute;
-        left: 62rem;
-        top: 35rem;
-    }
-
-    #img-javascript {
-        position: absolute;
-        top: 35rem;
-        left: 36rem;
-    }
 }
 
 @media (min-width: 1440px) {
@@ -984,9 +960,6 @@ input[type=submit]:hover {
         top: 18rem;
     }
 
-    .aboutMe {
-        height: 100%;
-    }
 
     .projets img {
         position: absolute;
@@ -1003,8 +976,8 @@ input[type=submit]:hover {
 
 @media (min-width: 1023px) AND (max-width: 1024px) {
     .portfolio-wrap {
-        width: 769px;
-        max-width: 769px;
+        width: 850px;
+        max-width: 850px;
         margin: 0 auto;
     }
 
